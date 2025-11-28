@@ -14,46 +14,48 @@
       font-size: 18px;
     }
 
+    /* ===== HEADER ===== */
     header {
-  background: #000;
-  color: #fff;
-  padding: 2rem 1rem 3rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
+      background: #000;
+      color: #fff;
+      padding: 2rem 1rem 3rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
 
-.header-top {
+    .header-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;   /* ikon berada di tengah */
+  gap: 1.5rem;                /* jarak antar ikon */
   width: 100%;
-  max-width: 350px;
 }
 
-.header-icon {
-  width: 70px;
-  height: 60px;
-  object-fit: contain;
-}
+    .header-icon {
+      width: 70px;
+      height: 60px;
+      object-fit: contain;
+    }
 
-header h1 {
-  font-size: 2rem;
-  margin: 0;
-}
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
 
-header p {
-  margin: 0;
-}
+    header p {
+      margin: 0;
+    }
 
-
+    /* ===== NAVBAR ===== */
     nav { 
       background:#222; 
       padding:1rem; 
       text-align:center; 
       font-size: 1.2rem;
     }
+
     nav a { 
       color:#fff; 
       margin:0 1.5rem; 
@@ -63,7 +65,7 @@ header p {
 
     /* ===== CONTENT WRAPPER ===== */
     .content {
-      max-width: 900px; /* Diubah dari 1100px ke 900px untuk membuat halaman lebih sempit */
+      max-width: 900px;
       margin: auto;
       padding: 2rem 1.5rem;
     }
@@ -93,23 +95,23 @@ header p {
       font-size: 1.1rem;
     }
 
+    /* ===== MEDIA QUERY MOBILE ===== */
     @media (max-width: 480px) {
-  .header-icon {
-    width: 55px;
-    height: 45px;
-  }
+      .header-icon {
+        width: 55px;
+        height: 45px;
+      }
 
-  header h1 {
-    font-size: 1.5rem;
-  }
-}
-
-      body {
-        font-size: 17px;
+      header h1 {
+        font-size: 1.5rem;
       }
 
       nav a {
         margin: 0 0.8rem;
+      }
+
+      body {
+        font-size: 17px;
       }
     }
   </style>
@@ -127,15 +129,12 @@ header p {
   <p>You're in the About page</p>
 </header>
 
-
-
 <nav>
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
   <a href="photos.html">Photos</a>
   <a href="contact.html">Contact</a>
 </nav>
-
 
 <div class="content">
 
@@ -157,7 +156,6 @@ header p {
   </section>
 
 </div>
-
 
 <footer>
   <p>© 2025 LEUIT BARBERSHOP – All Rights Reserved</p>
