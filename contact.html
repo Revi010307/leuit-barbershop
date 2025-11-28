@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact LEUIT</title>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
+
+    header { 
+      background: #000; 
+      color: #fff; 
+      padding: 3rem 1rem; 
+      text-align: center; 
+      position: relative; 
+    }
+    header h1 { margin: 0; font-size: 2.6rem; }
+    header p { margin: 0.4rem 0; }
+
+    .header-icon { width: 120px; height: 90px; position: absolute; top: 25px; object-fit: contain; }
+    .left-icon { left: 40px; }
+    .right-icon { right: 40px; }
+
+    nav { background:#222; padding:1rem; text-align:center; }
+    nav a { color:#fff; margin:0 1rem; text-decoration:none; font-weight:bold; }
+
+    section { padding: 3rem 1.5rem; max-width: 1100px; margin: auto; }
+    h2 { text-align:center; font-size:2rem; margin-bottom:2rem; }
+
+    .contact { 
+      background:#fff; 
+      border-radius:12px; 
+      padding:2rem; 
+      box-shadow:0 4px 12px rgba(0,0,0,0.1); 
+    }
+
+    input, textarea { 
+      width:100%; 
+      padding:0.7rem; 
+      margin-top:0.5rem; 
+      border-radius:8px; 
+      border:1px solid #ccc; 
+    }
+
+    button { 
+      background:#111; 
+      color:#fff; 
+      padding:0.8rem 1.5rem; 
+      border:none; 
+      border-radius:8px; 
+      cursor:pointer; 
+      margin-top:1rem; 
+    }
+
+    footer { 
+      background:#111; 
+      color:#fff; 
+      text-align:center; 
+      padding:2rem; 
+      margin-top:3rem; 
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HEADER FIXED -->
+<header>
+  <img src="logo1.jpg" class="header-icon left-icon" alt="left icon">
+  <img src="kuning.jpg" class="header-icon right-icon" alt="right icon">
+  <h1>LEUIT BARBERSHOP - Contact </h1>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="photos.html">Photos</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <h2>Kontak</h2>
+  <div class="contact">
+    <p>Berikan saran tentang hasil photo.</p>
+
+    <form action="https://formsubmit.co/waty010307@gmail.com" method="POST">
+      <label>Nama</label>
+      <input type="text" name="nama" placeholder="Nama kamu" required />
+
+      <label>Email</label>
+      <input type="email" name="email" placeholder="Email kamu" required />
+
+      <label>Pesan</label>
+      <textarea name="pesan" rows="5" placeholder="Tulis pesan..." required></textarea>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Portofolio Revi Tiarawati</p>
+</footer>
+
+</body>
+</html>
