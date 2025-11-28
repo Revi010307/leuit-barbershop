@@ -14,40 +14,39 @@
       font-size: 18px;
     }
 
-    header { 
-      background: #000; 
-      color: #fff; 
-      padding: 3rem 1rem;
-    }
+    header {
+  background: #000;
+  color: #fff;
+  padding: 2rem 1rem 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 
-    .header-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 900px; /* Diubah dari 1100px ke 900px untuk membuat halaman lebih sempit */
-      margin: auto;
-    }
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 350px;
+}
 
-    .header-icon { 
-      width: 80px; 
-      height: 80px; 
-      object-fit: contain;
-    }
+.header-icon {
+  width: 70px;
+  height: 60px;
+  object-fit: contain;
+}
 
-    .header-title {
-      text-align: center;
-      flex: 1;
-    }
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
 
-    .header-title h1 { 
-      margin: 0; 
-      font-size: 2.4rem;
-    }
+header p {
+  margin: 0;
+}
 
-    .header-title p { 
-      margin: 0.4rem 0; 
-      font-size: 1.2rem;
-    }
 
     nav { 
       background:#222; 
@@ -94,22 +93,16 @@
       font-size: 1.1rem;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 480px) {
+  .header-icon {
+    width: 55px;
+    height: 45px;
+  }
 
-      .header-row {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0 1rem;
-      }
-
-      .header-icon { 
-        width: 55px;
-        height: 55px;
-      }
-
-      .header-title h1 {
-        font-size: 1.8rem;
-      }
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
 
       body {
         font-size: 17px;
@@ -125,19 +118,15 @@
 <body>
 
 <header>
-  <div class="header-row">
-
-    <img src="logo1.jpg" class="header-icon" alt="Logo kiri">
-
-    <div class="header-title">
-      <h1>LEUIT BARBERSHOP</h1>
-      <p>Look Sharp. Feel Confident.</p>
-    </div>
-
-    <img src="kuning.jpg" class="header-icon" alt="Logo kanan">
-
+  <div class="header-top">
+    <img src="logo1.jpg" class="header-icon" alt="logo kiri">
+    <img src="kuning.jpg" class="header-icon" alt="logo kanan">
   </div>
+
+  <h1>LEUIT BARBERSHOP – About</h1>
+  <p>You're in the About page</p>
 </header>
+
 
 
 <nav>
